@@ -21,6 +21,7 @@
 		0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */; };
 		0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */; };
 		0CF3657429DA52C50000EF42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657329DA52C50000EF42 /* User.swift */; };
+		0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */; };
 		8DD2671A01DD342973EB00A4 /* Pods_Busify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLeadingIcon.swift; sourceTree = "<group>"; };
 		0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVisibility.swift; sourceTree = "<group>"; };
 		0CF3657329DA52C50000EF42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
 		4F14B7F8BEED074ADE362FA0 /* Pods-Busify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.debug.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.debug.xcconfig"; sourceTree = "<group>"; };
 		A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Busify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BAF9555538258216E1E036 /* Pods-Busify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.release.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		0CBFF55229D8BD7300397103 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CFAB3CD29DB168100B87672 /* Tickets */,
 				0CB3428329DA3CA7004A4F59 /* Register */,
 				0C806DC029DA2C9B006EE007 /* Login */,
 				0C413DEF29D8DE0A007FC5B8 /* TicketSelection */,
@@ -184,6 +187,14 @@
 				0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CFAB3CD29DB168100B87672 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */,
+			);
+			path = Tickets;
 			sourceTree = "<group>";
 		};
 		4AB5BD932DB55E6CF769F8FB /* Pods */ = {
@@ -322,6 +333,7 @@
 				0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */,
 				0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */,
 				0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */,
+				0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */,
 				0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */,
 				0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */,
 				0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */,

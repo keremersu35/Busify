@@ -59,7 +59,7 @@ extension LoginViewController {
         
         if (email == user.email && password == user.password) {
           
-          //performSegue(withIdentifier: "loginSuccessSegue", sender: self)
+          performSegue(withIdentifier: "loginToTicketSelectionSegue", sender: self)
             
         } else {
           let alert = UIAlertController(title: "Error", message: "E-mail or password is invalid", preferredStyle: .alert)

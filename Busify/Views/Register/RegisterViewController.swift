@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController {
         }
         
         guard let username = userTextField.text, !username.isEmpty else {
-            showAlert(title: "Error", message: "LPlease provide your name and lastname address.")
+            showAlert(title: "Error", message: "Please provide your name and lastname address.")
             return
         }
         
@@ -46,6 +46,7 @@ class RegisterViewController: UIViewController {
         }
         
         UserDefaults.standard.set(User(username: username, password: password, email: email).toDictionary(), forKey: "userInfo")
+        performSegue(withIdentifier: "registerToTicketSelectionSegue", sender: self)
         
     }
     
