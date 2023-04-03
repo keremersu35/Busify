@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "324FB168-7D01-4937-B0E7-FDF5DF2A5758"
-            shouldBeEnabled = "No"
+            uuid = "F856E4BD-D6DB-4FCE-BC3C-3AB8AC9A3EA7"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Busify/Views/TicketSelection/TicketSelectionViewController.swift"
+            filePath = "Busify/Views/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "pickerView(_:titleForRow:forComponent:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getUser()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

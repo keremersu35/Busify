@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C413DF029D8DF1A007FC5B8 /* TicketSelectionViewController.swift */; };
+		0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C806DC129DA2CB1006EE007 /* LoginViewController.swift */; };
+		0CB3428529DA3CBD004A4F59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3428429DA3CBD004A4F59 /* RegisterViewController.swift */; };
 		0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF53B29D89E7800397103 /* AppDelegate.swift */; };
 		0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF53D29D89E7800397103 /* SceneDelegate.swift */; };
 		0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF53F29D89E7800397103 /* OnboardingViewController.swift */; };
@@ -16,11 +18,16 @@
 		0CBFF54829D89E7800397103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFF54629D89E7800397103 /* LaunchScreen.storyboard */; };
 		0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55729D8CBB100397103 /* OnboardingModel.swift */; };
 		0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */; };
+		0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */; };
+		0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */; };
+		0CF3657429DA52C50000EF42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657329DA52C50000EF42 /* User.swift */; };
 		8DD2671A01DD342973EB00A4 /* Pods_Busify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C413DF029D8DF1A007FC5B8 /* TicketSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSelectionViewController.swift; sourceTree = "<group>"; };
+		0C806DC129DA2CB1006EE007 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CB3428429DA3CBD004A4F59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0CBFF53829D89E7800397103 /* Busify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Busify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBFF53B29D89E7800397103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CBFF53D29D89E7800397103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +38,9 @@
 		0CBFF54929D89E7800397103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CBFF55729D8CBB100397103 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLeadingIcon.swift; sourceTree = "<group>"; };
+		0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVisibility.swift; sourceTree = "<group>"; };
+		0CF3657329DA52C50000EF42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F14B7F8BEED074ADE362FA0 /* Pods-Busify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.debug.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.debug.xcconfig"; sourceTree = "<group>"; };
 		A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Busify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BAF9555538258216E1E036 /* Pods-Busify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.release.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +64,22 @@
 				0C413DF029D8DF1A007FC5B8 /* TicketSelectionViewController.swift */,
 			);
 			path = TicketSelection;
+			sourceTree = "<group>";
+		};
+		0C806DC029DA2C9B006EE007 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0C806DC129DA2CB1006EE007 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0CB3428329DA3CA7004A4F59 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3428429DA3CBD004A4F59 /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		0CBFF52F29D89E7800397103 = {
@@ -117,6 +143,8 @@
 		0CBFF55229D8BD7300397103 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CB3428329DA3CA7004A4F59 /* Register */,
+				0C806DC029DA2C9B006EE007 /* Login */,
 				0C413DEF29D8DE0A007FC5B8 /* TicketSelection */,
 				0CBFF55429D8C3B300397103 /* Onboarding */,
 			);
@@ -127,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBFF55729D8CBB100397103 /* OnboardingModel.swift */,
+				0CF3657329DA52C50000EF42 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +172,8 @@
 		0CBFF55529D8C5BD00397103 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */,
+				0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,12 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB3428529DA3CBD004A4F59 /* RegisterViewController.swift in Sources */,
+				0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */,
 				0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */,
 				0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */,
 				0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */,
 				0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */,
+				0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */,
+				0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */,
 				0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */,
 				0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */,
+				0CF3657429DA52C50000EF42 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

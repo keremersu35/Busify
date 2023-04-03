@@ -46,7 +46,7 @@ extension OnboardingViewController {
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
         if currentPage == onboardingArray.count - 1 {
-            let controller = storyboard?.instantiateViewController(identifier: "TicketSelectionVC") as! TicketSelectionViewController
+            let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .crossDissolve
             //UserDefaults.standard.hasOnboarded = true
