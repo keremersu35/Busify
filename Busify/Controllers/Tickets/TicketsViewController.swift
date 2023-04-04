@@ -20,7 +20,7 @@ class TicketsViewController: UIViewController, UITableViewDelegate, UITableViewD
         ticketsTableView.rowHeight = UITableView.automaticDimension
         ticketsTableView.reloadData()
         
-        ticketsTableView.register(UINib(nibName: "TicketCell", bundle: nil), forCellReuseIdentifier: "TicketCell")
+        ticketsTableView.register(UINib(nibName: Constants.NibNames.ticketCell.rawValue, bundle: nil), forCellReuseIdentifier: Constants.NibNames.ticketCell.rawValue)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -338,7 +338,7 @@
         <!--Ticket Selection View Controller-->
         <scene sceneID="eBi-Cr-fq8">
             <objects>
-                <viewController id="EbH-o5-MZE" customClass="TicketSelectionViewController" customModule="Busify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TicketSelectionVC" id="EbH-o5-MZE" customClass="TicketSelectionViewController" customModule="Busify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mmg-rS-tQF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -514,7 +514,7 @@
         <!--Tickets View Controller-->
         <scene sceneID="FZy-hI-ITG">
             <objects>
-                <viewController id="H0k-ZS-hTu" customClass="TicketsViewController" customModule="Busify" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TicketsVC" id="H0k-ZS-hTu" customClass="TicketsViewController" customModule="Busify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="unu-DL-FUY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

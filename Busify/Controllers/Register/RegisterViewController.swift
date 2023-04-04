@@ -17,17 +17,12 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let myImage = UIImage(systemName: "envelope"){
-            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: "lock"){
-            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: "person"){
-            userTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
+        configureTextFields()
     }
+}
 
+extension RegisterViewController {
+    
     @IBAction func registerButtonAction(_ sender: UIButton) {
         
         guard let email = mailTextField.text, !email.isEmpty else {
@@ -45,15 +40,22 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        UserDefaults.standard.set(User(username: username, password: password, email: email).toDictionary(), forKey: "userInfo")
-        performSegue(withIdentifier: "registerToTicketSelectionSegue", sender: self)
-        
+        UserDefaults.standard.set(User(username: username, password: password, email: email).toDictionary(), forKey: Constants.UserDefaultsKeys.userInfo.rawValue)
+        performSegue(withIdentifier: Constants.SegueIdentifiers.registerToTicketSelectionSegue.rawValue, sender: self)
     }
     
-    func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+    func configureTextFields() {
+        
+        if let myImage = UIImage(systemName: Constants.ImageNames.envelope.rawValue){
+            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        if let myImage = UIImage(systemName: Constants.ImageNames.lock.rawValue){
+            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        if let myImage = UIImage(systemName: Constants.ImageNames.person.rawValue){
+            userTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
     }
 }
+
+

@@ -21,23 +21,14 @@ class TicketSelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let myImage = UIImage(systemName: "location"){
-            fromTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        fromTextField.layer.borderColor = UIColor.placeholderText.cgColor
-        if let myImage = UIImage(systemName: "location.fill"){
-            toTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        toTextField.layer.borderColor = UIColor.placeholderText.cgColor
-        if let myImage = UIImage(systemName: "calendar"){
-            dateTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        dateTextField.layer.borderColor = UIColor.placeholderText.cgColor
 
+        configureTextFields()
         configurePickers()
         createDatePicker()
     }
+}
+
+extension TicketSelectionViewController {
     
     @IBAction func exchangeButtonAction(_ sender: UIButton) {
         (fromTextField.text, toTextField.text) = (toTextField.text, fromTextField.text)
@@ -53,7 +44,12 @@ class TicketSelectionViewController: UIViewController {
     }
     
     @IBAction func findTicketButtonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: "selectionToTicketsSegue", sender: self)
+        performSegue(withIdentifier: Constants.SegueIdentifiers.selectionToTicketsSegue.rawValue, sender: self)
+    }
+    
+    @objc func doneButtonClicked() {
+        dateTextField.text = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
     }
     
     func configurePickers() {
@@ -85,9 +81,20 @@ class TicketSelectionViewController: UIViewController {
         datePicker.preferredDatePickerStyle = .wheels
         }
     
-    @objc func doneButtonClicked() {
-        dateTextField.text = formatter.string(from: datePicker.date)
-        self.view.endEditing(true)
+    func configureTextFields() {
+        
+        if let myImage = UIImage(systemName: Constants.ImageNames.location.rawValue){
+            fromTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        fromTextField.layer.borderColor = UIColor.placeholderText.cgColor
+        if let myImage = UIImage(systemName: Constants.ImageNames.locationFill.rawValue){
+            toTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        toTextField.layer.borderColor = UIColor.placeholderText.cgColor
+        if let myImage = UIImage(systemName: Constants.ImageNames.calendar.rawValue){
+            dateTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        dateTextField.layer.borderColor = UIColor.placeholderText.cgColor
     }
 }
 
@@ -114,7 +121,7 @@ extension TicketSelectionViewController: UIPickerViewDataSource, UIPickerViewDel
             toTextField.text = cities[row]
             toTextField.resignFirstResponder()
         default:
-            print("")
+            print("Error")
         }
     }
 }

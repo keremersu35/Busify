@@ -25,8 +25,9 @@
 		0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */; };
 		0CD8040A29DC6EE500FDCAE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040929DC6EE500FDCAE1 /* Constants.swift */; };
 		0CD8040C29DC6FFD00FDCAE1 /* String + Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */; };
+		0CD8040E29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */; };
 		0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */; };
-		0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */; };
+		0CF3657229DA51A70000EF42 /* UITextField + PasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */; };
 		0CF3657429DA52C50000EF42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657329DA52C50000EF42 /* User.swift */; };
 		0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */; };
 		A73D9B98ACA8D107D7B6E386 /* Pods_Busify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A02194D8A06008B161AFF1 /* Pods_Busify.framework */; };
@@ -54,8 +55,9 @@
 		0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		0CD8040929DC6EE500FDCAE1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localization.swift"; sourceTree = "<group>"; };
+		0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + ShowAlert.swift"; sourceTree = "<group>"; };
 		0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + LeadingIcon.swift"; sourceTree = "<group>"; };
-		0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVisibility.swift; sourceTree = "<group>"; };
+		0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + PasswordVisibility.swift"; sourceTree = "<group>"; };
 		0CF3657329DA52C50000EF42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
 		9564113E294FAE9BDA5AA5B6 /* Pods-Busify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.release.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		0CBFF54F29D8BD3300397103 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0C96831529DC51BE003758B0 /* BusConfigFiles */,
 				0CBFF55529D8C5BD00397103 /* Extensions */,
 				0CD8040929DC6EE500FDCAE1 /* Constants.swift */,
 			);
@@ -210,8 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */,
-				0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */,
+				0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */,
 				0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */,
+				0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,7 +231,6 @@
 		0CFAB3CD29DB168100B87672 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
-				0C96831529DC51BE003758B0 /* BusConfigFiles */,
 				0C196D8D29DBA45A007A1527 /* Cell */,
 				0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */,
 			);
@@ -380,7 +383,8 @@
 				0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */,
 				0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */,
 				0C96831929DC5211003758B0 /* SeatCreator.swift in Sources */,
-				0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */,
+				0CD8040E29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift in Sources */,
+				0CF3657229DA51A70000EF42 /* UITextField + PasswordVisibility.swift in Sources */,
 				0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */,
 				0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */,
 				0CF3657429DA52C50000EF42 /* User.swift in Sources */,

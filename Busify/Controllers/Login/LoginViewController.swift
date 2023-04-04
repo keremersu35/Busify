@@ -20,24 +20,28 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        passwordTextField.isSecureTextEntry = true
-        if let myImage = UIImage(systemName: "envelope"){
-            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: "lock"){
-            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        passwordTextField.enablePasswordToggle()
-        
+        configureTextFields()
     }
 }
 
 extension LoginViewController {
     
     func getUser() {
-        if let userInfoDict = UserDefaults.standard.dictionary(forKey: "userInfo") {
+        if let userInfoDict = UserDefaults.standard.dictionary(forKey: Constants.UserDefaultsKeys.userInfo.rawValue) {
             self.user = User(from: userInfoDict)!
         }
+    }
+    
+    func configureTextFields() {
+        
+        passwordTextField.isSecureTextEntry = true
+        if let myImage = UIImage(systemName: Constants.ImageNames.envelope.rawValue){
+            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        if let myImage = UIImage(systemName: Constants.ImageNames.lock.rawValue){
+            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
+        }
+        passwordTextField.enablePasswordToggle()
     }
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
@@ -55,13 +59,10 @@ extension LoginViewController {
         }
         
         if (email == user.email && password == user.password) {
-            performSegue(withIdentifier: "loginToTicketSelectionSegue", sender: self)
+            performSegue(withIdentifier: Constants.SegueIdentifiers.loginToTicketSelectionSegue.rawValue, sender: self)
             
         } else {
-            let alert = UIAlertController(title: "Error", message: "E-mail or password is invalid", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(okAction)
-            present(alert, animated: true, completion: nil)
+            showAlert(title: "Error", message: "E-mail or password is invalid")
         }
     }
 }

@@ -9,12 +9,10 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     let onboardingArray = setOnboardingData()
-    
     var currentPage = 0 {
         didSet {
             pageControl.currentPage = currentPage
@@ -26,27 +24,24 @@ class OnboardingViewController: UIViewController {
         }
     }
     
-
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        configureCollectionView()
         
+        configureCollectionView()
         pageControl.numberOfPages = onboardingArray.count
     }
+}
+
+extension OnboardingViewController {
     
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-}
-
-
-extension OnboardingViewController {
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
         if currentPage == onboardingArray.count - 1 {
-            let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
+            let controller = storyboard?.instantiateViewController(identifier: Constants.VCIdentifiers.LoginVC.rawValue) as! LoginViewController
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .crossDissolve
             //UserDefaults.standard.hasOnboarded = true
@@ -66,7 +61,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCell", for: indexPath) as! OnBoardingCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.NibNames.onboardingCell.rawValue, for: indexPath) as! OnBoardingCell
         cell.setup(model: onboardingArray[indexPath.row])
         return cell
     }
