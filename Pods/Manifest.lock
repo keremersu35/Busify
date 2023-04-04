@@ -1,16 +1,16 @@
 PODS:
-  - DropDown (2.3.13)
+  - ALBusSeatView (0.2.5)
 
 DEPENDENCIES:
-  - DropDown
+  - ALBusSeatView
 
 SPEC REPOS:
   trunk:
-    - DropDown
+    - ALBusSeatView
 
 SPEC CHECKSUMS:
-  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  ALBusSeatView: 5416cf8e3d0d8d993da5f726f92cbb425463efd2
 
-PODFILE CHECKSUM: 73b47a2e9a6a13fd94c620dc38a24f1880ac93b5
+PODFILE CHECKSUM: 138fe4cdbadfcc4ab5428d49637bc37b431dc4f8
 
 COCOAPODS: 1.11.3

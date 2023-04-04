@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C196D9029DBA46D007A1527 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C196D8E29DBA46D007A1527 /* TicketCell.swift */; };
+		0C196D9129DBA46D007A1527 /* TicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C196D8F29DBA46D007A1527 /* TicketCell.xib */; };
 		0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C413DF029D8DF1A007FC5B8 /* TicketSelectionViewController.swift */; };
 		0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C806DC129DA2CB1006EE007 /* LoginViewController.swift */; };
+		0C96831729DC51E4003758B0 /* BusSeatConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96831629DC51E4003758B0 /* BusSeatConfig.swift */; };
+		0C96831929DC5211003758B0 /* SeatCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96831829DC5211003758B0 /* SeatCreator.swift */; };
+		0C96831B29DC5236003758B0 /* SeatDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96831A29DC5236003758B0 /* SeatDataManager.swift */; };
 		0CB3428529DA3CBD004A4F59 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3428429DA3CBD004A4F59 /* RegisterViewController.swift */; };
 		0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF53B29D89E7800397103 /* AppDelegate.swift */; };
 		0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF53D29D89E7800397103 /* SceneDelegate.swift */; };
@@ -18,16 +23,24 @@
 		0CBFF54829D89E7800397103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFF54629D89E7800397103 /* LaunchScreen.storyboard */; };
 		0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55729D8CBB100397103 /* OnboardingModel.swift */; };
 		0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */; };
-		0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */; };
+		0CD8040A29DC6EE500FDCAE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040929DC6EE500FDCAE1 /* Constants.swift */; };
+		0CD8040C29DC6FFD00FDCAE1 /* String + Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */; };
+		0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */; };
 		0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */; };
 		0CF3657429DA52C50000EF42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657329DA52C50000EF42 /* User.swift */; };
 		0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */; };
-		8DD2671A01DD342973EB00A4 /* Pods_Busify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */; };
+		A73D9B98ACA8D107D7B6E386 /* Pods_Busify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A02194D8A06008B161AFF1 /* Pods_Busify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05A02194D8A06008B161AFF1 /* Pods_Busify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Busify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C196D8E29DBA46D007A1527 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		0C196D8F29DBA46D007A1527 /* TicketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketCell.xib; sourceTree = "<group>"; };
 		0C413DF029D8DF1A007FC5B8 /* TicketSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSelectionViewController.swift; sourceTree = "<group>"; };
 		0C806DC129DA2CB1006EE007 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C96831629DC51E4003758B0 /* BusSeatConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusSeatConfig.swift; sourceTree = "<group>"; };
+		0C96831829DC5211003758B0 /* SeatCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCreator.swift; sourceTree = "<group>"; };
+		0C96831A29DC5236003758B0 /* SeatDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatDataManager.swift; sourceTree = "<group>"; };
 		0CB3428429DA3CBD004A4F59 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0CBFF53829D89E7800397103 /* Busify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Busify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBFF53B29D89E7800397103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,13 +52,14 @@
 		0CBFF54929D89E7800397103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CBFF55729D8CBB100397103 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
-		0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLeadingIcon.swift; sourceTree = "<group>"; };
+		0CD8040929DC6EE500FDCAE1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localization.swift"; sourceTree = "<group>"; };
+		0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + LeadingIcon.swift"; sourceTree = "<group>"; };
 		0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVisibility.swift; sourceTree = "<group>"; };
 		0CF3657329DA52C50000EF42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
-		4F14B7F8BEED074ADE362FA0 /* Pods-Busify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.debug.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.debug.xcconfig"; sourceTree = "<group>"; };
-		A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Busify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8BAF9555538258216E1E036 /* Pods-Busify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.release.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.release.xcconfig"; sourceTree = "<group>"; };
+		9564113E294FAE9BDA5AA5B6 /* Pods-Busify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.release.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.release.xcconfig"; sourceTree = "<group>"; };
+		E52DDABED8A9F0A6433BA4E8 /* Pods-Busify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Busify.debug.xcconfig"; path = "Target Support Files/Pods-Busify/Pods-Busify.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +67,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD2671A01DD342973EB00A4 /* Pods_Busify.framework in Frameworks */,
+				A73D9B98ACA8D107D7B6E386 /* Pods_Busify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C196D8D29DBA45A007A1527 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0C196D8E29DBA46D007A1527 /* TicketCell.swift */,
+				0C196D8F29DBA46D007A1527 /* TicketCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0C413DEF29D8DE0A007FC5B8 /* TicketSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +99,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		0C96831529DC51BE003758B0 /* BusConfigFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0C96831629DC51E4003758B0 /* BusSeatConfig.swift */,
+				0C96831829DC5211003758B0 /* SeatCreator.swift */,
+				0C96831A29DC5236003758B0 /* SeatDataManager.swift */,
+			);
+			path = BusConfigFiles;
+			sourceTree = "<group>";
+		};
 		0CB3428329DA3CA7004A4F59 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +123,7 @@
 				0CBFF53A29D89E7800397103 /* Busify */,
 				0CBFF53929D89E7800397103 /* Products */,
 				4AB5BD932DB55E6CF769F8FB /* Pods */,
-				B9FCADA86E084DE4D5D17684 /* Frameworks */,
+				63E76972DAEF7C85EB849EB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBFF55329D8BE6200397103 /* Model */,
-				0CBFF55229D8BD7300397103 /* Views */,
+				0CBFF55229D8BD7300397103 /* Controllers */,
 				0CBFF55129D8BD5F00397103 /* Resources */,
 				0CBFF55029D8BD4B00397103 /* App */,
 				0CBFF54F29D8BD3300397103 /* Utils */,
@@ -121,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBFF55529D8C5BD00397103 /* Extensions */,
+				0CD8040929DC6EE500FDCAE1 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -142,7 +176,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		0CBFF55229D8BD7300397103 /* Views */ = {
+		0CBFF55229D8BD7300397103 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0CFAB3CD29DB168100B87672 /* Tickets */,
@@ -151,7 +185,7 @@
 				0C413DEF29D8DE0A007FC5B8 /* TicketSelection */,
 				0CBFF55429D8C3B300397103 /* Onboarding */,
 			);
-			path = Views;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		0CBFF55329D8BE6200397103 /* Model */ = {
@@ -175,8 +209,9 @@
 		0CBFF55529D8C5BD00397103 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0CF3656F29DA46600000EF42 /* TextFieldLeadingIcon.swift */,
+				0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */,
 				0CF3657129DA51A70000EF42 /* SetPasswordVisibility.swift */,
+				0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +227,8 @@
 		0CFAB3CD29DB168100B87672 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				0C96831529DC51BE003758B0 /* BusConfigFiles */,
+				0C196D8D29DBA45A007A1527 /* Cell */,
 				0CFAB3CE29DB16A600B87672 /* TicketsViewController.swift */,
 			);
 			path = Tickets;
@@ -200,16 +237,16 @@
 		4AB5BD932DB55E6CF769F8FB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4F14B7F8BEED074ADE362FA0 /* Pods-Busify.debug.xcconfig */,
-				D8BAF9555538258216E1E036 /* Pods-Busify.release.xcconfig */,
+				E52DDABED8A9F0A6433BA4E8 /* Pods-Busify.debug.xcconfig */,
+				9564113E294FAE9BDA5AA5B6 /* Pods-Busify.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B9FCADA86E084DE4D5D17684 /* Frameworks */ = {
+		63E76972DAEF7C85EB849EB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8699CE9AD90AA1FCC4F68A8 /* Pods_Busify.framework */,
+				05A02194D8A06008B161AFF1 /* Pods_Busify.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,11 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CBFF54C29D89E7800397103 /* Build configuration list for PBXNativeTarget "Busify" */;
 			buildPhases = (
-				6749C7830DEBA9F3214B0163 /* [CP] Check Pods Manifest.lock */,
+				B90EC39196C9AA2DE5AC81A7 /* [CP] Check Pods Manifest.lock */,
 				0CBFF53429D89E7800397103 /* Sources */,
 				0CBFF53529D89E7800397103 /* Frameworks */,
 				0CBFF53629D89E7800397103 /* Resources */,
-				67733335400A4222553703A0 /* [CP] Embed Pods Frameworks */,
+				5A6BED6D6D4BE0FA6156EA9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,13 +314,31 @@
 				0CBFF54829D89E7800397103 /* LaunchScreen.storyboard in Resources */,
 				0CBFF54529D89E7800397103 /* Assets.xcassets in Resources */,
 				0CBFF54329D89E7800397103 /* Main.storyboard in Resources */,
+				0C196D9129DBA46D007A1527 /* TicketCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6749C7830DEBA9F3214B0163 /* [CP] Check Pods Manifest.lock */ = {
+		5A6BED6D6D4BE0FA6156EA9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B90EC39196C9AA2DE5AC81A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,23 +360,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67733335400A4222553703A0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Busify/Pods-Busify-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,17 +368,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB3428529DA3CBD004A4F59 /* RegisterViewController.swift in Sources */,
+				0CD8040A29DC6EE500FDCAE1 /* Constants.swift in Sources */,
+				0C96831729DC51E4003758B0 /* BusSeatConfig.swift in Sources */,
+				0C96831B29DC5236003758B0 /* SeatDataManager.swift in Sources */,
 				0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */,
 				0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */,
 				0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */,
 				0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */,
 				0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */,
+				0C196D9029DBA46D007A1527 /* TicketCell.swift in Sources */,
 				0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */,
-				0CF3657029DA46600000EF42 /* TextFieldLeadingIcon.swift in Sources */,
+				0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */,
+				0C96831929DC5211003758B0 /* SeatCreator.swift in Sources */,
 				0CF3657229DA51A70000EF42 /* SetPasswordVisibility.swift in Sources */,
 				0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */,
 				0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */,
 				0CF3657429DA52C50000EF42 /* User.swift in Sources */,
+				0CD8040C29DC6FFD00FDCAE1 /* String + Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +526,7 @@
 		};
 		0CBFF54D29D89E7800397103 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F14B7F8BEED074ADE362FA0 /* Pods-Busify.debug.xcconfig */;
+			baseConfigurationReference = E52DDABED8A9F0A6433BA4E8 /* Pods-Busify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,7 +555,7 @@
 		};
 		0CBFF54E29D89E7800397103 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8BAF9555538258216E1E036 /* Pods-Busify.release.xcconfig */;
+			baseConfigurationReference = 9564113E294FAE9BDA5AA5B6 /* Pods-Busify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

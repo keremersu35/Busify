@@ -367,7 +367,7 @@
                                 <rect key="frame" x="32" y="253" width="160" height="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select a City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JtX-Rm-aVu">
@@ -376,7 +376,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick Date" textAlignment="natural" minimumFontSize="17" background="cale" translatesAutoresizingMaskIntoConstraints="NO" id="xOQ-Qi-ZfP">
-                                <rect key="frame" x="16" y="370" width="361" height="50"/>
+                                <rect key="frame" x="16" y="370.66666666666669" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5pV-bO-Txr"/>
                                 </constraints>
@@ -389,35 +389,27 @@
                                     <constraint firstAttribute="width" constant="142" id="yna-Kj-X4e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fij-uN-6K4">
-                                <rect key="frame" x="32" y="342" width="345" height="20"/>
+                                <rect key="frame" x="32" y="342.66666666666669" width="345" height="20"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVp-jg-AN3">
-                                <rect key="frame" x="16" y="428" width="176.66666666666666" height="35"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="428.66666666666669" width="176.66666666666666" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Today">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="tinted" title="Today"/>
                                 <connections>
                                     <action selector="todayButtonAction:" destination="EbH-o5-MZE" eventType="touchUpInside" id="BdV-Ln-33e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e48-wI-21R">
-                                <rect key="frame" x="200.66666666666663" y="428" width="176.33333333333337" height="35"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="200.66666666666663" y="428.66666666666669" width="176.33333333333337" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Tomorrow">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="tinted" title="Tomorrow"/>
                                 <connections>
                                     <action selector="tomorrowButtonAction:" destination="EbH-o5-MZE" eventType="touchUpInside" id="reK-Bz-joT"/>
                                 </connections>
@@ -430,8 +422,8 @@
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Find Tickets">
-                                    <color key="baseForegroundColor" name="Primary"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="Primary"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="findTicketButtonAction:" destination="EbH-o5-MZE" eventType="touchUpInside" id="39a-4L-bvO"/>
@@ -439,18 +431,19 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NAL-mX-Z9C">
                                 <rect key="frame" x="147" y="134.33333333333334" width="99" height="87"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Primary"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="WC3-N6-upf"/>
                                     <constraint firstAttribute="height" constant="85.670000000000002" id="u6g-mq-qxt"/>
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLl-OL-qDL">
-                                <rect key="frame" x="176" y="289" width="40" height="35"/>
-                                <color key="backgroundColor" name="Primary"/>
+                                <rect key="frame" x="176" y="289" width="40" height="35.666666666666686"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <color key="tintColor" name="Primary"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="shuffle" catalog="system">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="Primary"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -463,7 +456,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BNK-jR-q6Z"/>
-                        <color key="backgroundColor" name="Primary"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dTZ-we-YWH" firstAttribute="top" secondItem="BNK-jR-q6Z" secondAttribute="top" id="1XZ-kq-8Rr"/>
                             <constraint firstItem="BNK-jR-q6Z" firstAttribute="bottom" secondItem="Bxv-Lm-Gzg" secondAttribute="bottom" constant="174" id="2c9-b0-sNA"/>
@@ -538,39 +531,31 @@
                                     <navigationItem title="B U S I F Y" id="eS3-or-EFO"/>
                                 </items>
                             </navigationBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-KD-EVy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hUY-vC-Bpy">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jC0-er-3O0">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LVA-Yt-2Ct">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xjg-iN-8aN">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.098039209840000002" green="0.062745101750000004" blue="0.094117648900000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kIH-fl-QYF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dnp-Cj-lPO" firstAttribute="trailing" secondItem="kIH-fl-QYF" secondAttribute="trailing" id="10K-pO-7zn"/>
+                            <constraint firstItem="hUY-vC-Bpy" firstAttribute="leading" secondItem="kIH-fl-QYF" secondAttribute="leading" id="1Mk-09-dAz"/>
                             <constraint firstItem="dnp-Cj-lPO" firstAttribute="top" secondItem="kIH-fl-QYF" secondAttribute="top" id="75k-0L-Tlc"/>
                             <constraint firstItem="dnp-Cj-lPO" firstAttribute="leading" secondItem="kIH-fl-QYF" secondAttribute="leading" id="SFc-JG-zZ6"/>
-                            <constraint firstItem="rX9-KD-EVy" firstAttribute="leading" secondItem="kIH-fl-QYF" secondAttribute="leading" id="X4Z-Zi-cxH"/>
-                            <constraint firstItem="rX9-KD-EVy" firstAttribute="top" secondItem="dnp-Cj-lPO" secondAttribute="bottom" id="e36-oC-hNP"/>
-                            <constraint firstItem="kIH-fl-QYF" firstAttribute="bottom" secondItem="rX9-KD-EVy" secondAttribute="bottom" id="mXG-ZM-wzr"/>
-                            <constraint firstItem="kIH-fl-QYF" firstAttribute="trailing" secondItem="rX9-KD-EVy" secondAttribute="trailing" id="mqE-FW-d87"/>
+                            <constraint firstItem="kIH-fl-QYF" firstAttribute="bottom" secondItem="hUY-vC-Bpy" secondAttribute="bottom" id="blb-iF-4BB"/>
+                            <constraint firstItem="kIH-fl-QYF" firstAttribute="trailing" secondItem="hUY-vC-Bpy" secondAttribute="trailing" id="djm-am-7nf"/>
+                            <constraint firstItem="hUY-vC-Bpy" firstAttribute="top" secondItem="dnp-Cj-lPO" secondAttribute="bottom" id="ryV-nS-TSR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ticketsTableView" destination="hUY-vC-Bpy" id="V33-29-mO1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDt-rh-bYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -614,9 +599,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

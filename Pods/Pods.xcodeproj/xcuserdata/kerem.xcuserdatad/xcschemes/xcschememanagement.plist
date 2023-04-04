@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DropDown.xcscheme</key>
+		<key>ALBusSeatView-ALBusSeatView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ALBusSeatView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
