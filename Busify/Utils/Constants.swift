@@ -18,6 +18,10 @@ struct Constants {
     enum ImageNames: String {
         
         case pamukkale = "pamukkale"
+        case varan = "varan"
+        case uludag = "uludag"
+        case istanbulKalesi = "istanbul_kalesi"
+        case kamilKoc = "kamil_koc"
         case iconBusDockerFront = "iconBusDockerFront"
         case iconBusFront = "iconBusFront"
         case iconRemoveButton = "iconRemoveButton"
@@ -29,6 +33,12 @@ struct Constants {
         case location = "location"
         case locationFill = "location.fill"
         case calendar = "calendar"
+    }
+    
+    enum ColorNames: String {
+        
+        case primary = "Primary"
+        case background = "Background"
     }
     
     enum VCIdentifiers: String {

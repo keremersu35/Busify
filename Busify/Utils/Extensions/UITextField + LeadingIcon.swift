@@ -37,11 +37,11 @@ extension UITextField {
         mainView.addSubview(seperatorView)
         
         if(Direction.Left == direction){ // image left
-            seperatorView.frame = CGRect(x: 45, y: 0, width: 5, height: 45)
+            seperatorView.frame = CGRect(x: 45, y: 0, width: 1, height: 45)
             self.leftViewMode = .always
             self.leftView = mainView
         } else { // image right
-            seperatorView.frame = CGRect(x: 0, y: 0, width: 5, height: 45)
+            seperatorView.frame = CGRect(x: 0, y: 0, width: 1, height: 45)
             self.rightViewMode = .always
             self.rightView = mainView
         }
@@ -49,5 +49,13 @@ extension UITextField {
         self.layer.borderColor = colorBorder.cgColor
         self.layer.borderWidth = CGFloat(0.5)
         self.layer.cornerRadius = 5
+    }
+}
+
+extension UITextField {
+    func addLeadingIcon(_ icon: String) {
+        if let myImage = UIImage(systemName: icon){
+            self.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white.withAlphaComponent(0.0), colorBorder: UIColor.white.withAlphaComponent(0.0))
+        }
     }
 }

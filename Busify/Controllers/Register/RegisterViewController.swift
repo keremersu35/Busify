@@ -46,16 +46,8 @@ extension RegisterViewController {
     
     func configureTextFields() {
         
-        if let myImage = UIImage(systemName: Constants.ImageNames.envelope.rawValue){
-            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: Constants.ImageNames.lock.rawValue){
-            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: Constants.ImageNames.person.rawValue){
-            userTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
+        mailTextField.addLeadingIcon(Constants.ImageNames.envelope.rawValue)
+        passwordTextField.addLeadingIcon(Constants.ImageNames.lock.rawValue)
+        userTextField.addLeadingIcon(Constants.ImageNames.person.rawValue)
     }
 }
-
-

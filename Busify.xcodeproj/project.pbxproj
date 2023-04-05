@@ -24,8 +24,10 @@
 		0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55729D8CBB100397103 /* OnboardingModel.swift */; };
 		0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */; };
 		0CD8040A29DC6EE500FDCAE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040929DC6EE500FDCAE1 /* Constants.swift */; };
-		0CD8040C29DC6FFD00FDCAE1 /* String + Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */; };
 		0CD8040E29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */; };
+		0CD8041029DCE3D700FDCAE1 /* TicketCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8040F29DCE3D700FDCAE1 /* TicketCellModel.swift */; };
+		0CD8041229DCEC7800FDCAE1 /* Date + toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8041129DCEC7800FDCAE1 /* Date + toString.swift */; };
+		0CD8041429DD99E700FDCAE1 /* UIViewController + MockDataConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8041329DD99E700FDCAE1 /* UIViewController + MockDataConfig.swift */; };
 		0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */; };
 		0CF3657229DA51A70000EF42 /* UITextField + PasswordVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */; };
 		0CF3657429DA52C50000EF42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF3657329DA52C50000EF42 /* User.swift */; };
@@ -54,8 +56,10 @@
 		0CBFF55729D8CBB100397103 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
 		0CD8040929DC6EE500FDCAE1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localization.swift"; sourceTree = "<group>"; };
 		0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + ShowAlert.swift"; sourceTree = "<group>"; };
+		0CD8040F29DCE3D700FDCAE1 /* TicketCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCellModel.swift; sourceTree = "<group>"; };
+		0CD8041129DCEC7800FDCAE1 /* Date + toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + toString.swift"; sourceTree = "<group>"; };
+		0CD8041329DD99E700FDCAE1 /* UIViewController + MockDataConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + MockDataConfig.swift"; sourceTree = "<group>"; };
 		0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + LeadingIcon.swift"; sourceTree = "<group>"; };
 		0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField + PasswordVisibility.swift"; sourceTree = "<group>"; };
 		0CF3657329DA52C50000EF42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 			children = (
 				0CBFF55729D8CBB100397103 /* OnboardingModel.swift */,
 				0CF3657329DA52C50000EF42 /* User.swift */,
+				0CD8040F29DCE3D700FDCAE1 /* TicketCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,8 +219,9 @@
 			children = (
 				0CF3656F29DA46600000EF42 /* UITextField + LeadingIcon.swift */,
 				0CF3657129DA51A70000EF42 /* UITextField + PasswordVisibility.swift */,
-				0CD8040B29DC6FFD00FDCAE1 /* String + Localization.swift */,
 				0CD8040D29DCC75100FDCAE1 /* UIViewController + ShowAlert.swift */,
+				0CD8041129DCEC7800FDCAE1 /* Date + toString.swift */,
+				0CD8041329DD99E700FDCAE1 /* UIViewController + MockDataConfig.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -374,12 +380,15 @@
 				0CD8040A29DC6EE500FDCAE1 /* Constants.swift in Sources */,
 				0C96831729DC51E4003758B0 /* BusSeatConfig.swift in Sources */,
 				0C96831B29DC5236003758B0 /* SeatDataManager.swift in Sources */,
+				0CD8041429DD99E700FDCAE1 /* UIViewController + MockDataConfig.swift in Sources */,
 				0C806DC229DA2CB1006EE007 /* LoginViewController.swift in Sources */,
 				0CBFF55829D8CBB100397103 /* OnboardingModel.swift in Sources */,
+				0CD8041029DCE3D700FDCAE1 /* TicketCellModel.swift in Sources */,
 				0C413DF129D8DF1A007FC5B8 /* TicketSelectionViewController.swift in Sources */,
 				0CFAB3CF29DB16A600B87672 /* TicketsViewController.swift in Sources */,
 				0CBFF55B29D8CC5200397103 /* OnboardingCell.swift in Sources */,
 				0C196D9029DBA46D007A1527 /* TicketCell.swift in Sources */,
+				0CD8041229DCEC7800FDCAE1 /* Date + toString.swift in Sources */,
 				0CBFF54029D89E7800397103 /* OnboardingViewController.swift in Sources */,
 				0CF3657029DA46600000EF42 /* UITextField + LeadingIcon.swift in Sources */,
 				0C96831929DC5211003758B0 /* SeatCreator.swift in Sources */,
@@ -388,7 +397,6 @@
 				0CBFF53C29D89E7800397103 /* AppDelegate.swift in Sources */,
 				0CBFF53E29D89E7800397103 /* SceneDelegate.swift in Sources */,
 				0CF3657429DA52C50000EF42 /* User.swift in Sources */,
-				0CD8040C29DC6FFD00FDCAE1 /* String + Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

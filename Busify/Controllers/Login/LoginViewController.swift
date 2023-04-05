@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var mailTextField: UITextField!
-    var user = User(username: "noname", password: "noname", email: "noname")
+    var user = User(username: "", password: "", email: "")
     
     override func viewWillAppear(_ animated: Bool) {
         getUser()
@@ -35,12 +35,8 @@ extension LoginViewController {
     func configureTextFields() {
         
         passwordTextField.isSecureTextEntry = true
-        if let myImage = UIImage(systemName: Constants.ImageNames.envelope.rawValue){
-            mailTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        if let myImage = UIImage(systemName: Constants.ImageNames.lock.rawValue){
-            passwordTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
+        mailTextField.addLeadingIcon(Constants.ImageNames.envelope.rawValue)
+        passwordTextField.addLeadingIcon(Constants.ImageNames.lock.rawValue)
         passwordTextField.enablePasswordToggle()
     }
     
@@ -66,8 +62,3 @@ extension LoginViewController {
         }
     }
 }
-
-
-
-
-

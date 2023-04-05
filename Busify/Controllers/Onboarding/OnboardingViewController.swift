@@ -74,7 +74,6 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
     }
-    
 }
 
 func setOnboardingData() -> Array<OnboardingModel> {

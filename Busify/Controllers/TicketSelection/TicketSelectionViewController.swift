@@ -17,11 +17,12 @@ class TicketSelectionViewController: UIViewController {
     var destinationCityPicker = UIPickerView()
     let datePicker = UIDatePicker()
     let formatter = DateFormatter()
-    let cities = ["İstanbul", "İzmir", "Ankara", "Adana", "Adıyaman", "Afyonkarahisar", "Ağrı", "Amasya", "Antalya", "Artvin", "Aydın", "Balıkesir", "Bilecik", "Bingöl", "Bitlis", "Bolu", "Burdur", "Bursa", "Çanakkale", "Çankırı", "Çorum", "Denizli", "Diyarbakır", "Edirne", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Gaziantep", "Giresun", "Gümüşhane", "Hakkari", "Hatay", "Isparta", "Mersin", "Kars", "Kastamonu", "Kayseri", "Kırklareli", "Kırşehir", "Kocaeli", "Konya", "Kütahya", "Malatya", "Manisa", "Kahramanmaraş", "Mardin", "Muğla", "Muş", "Nevşehir", "Niğde", "Ordu", "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Tekirdağ", "Tokat", "Trabzon", "Tunceli", "Şanlıurfa", "Uşak", "Van", "Yozgat", "Zonguldak", "Aksaray", "Bayburt", "Karaman", "Kırıkkale", "Batman", "Şırnak", "Bartın", "Ardahan", "Iğdır", "Yalova", "Karabük", "Kilis", "Osmaniye", "Düzce"]
+    var cities = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        cities = self.setCitiesList()
         configureTextFields()
         configurePickers()
         createDatePicker()
@@ -83,18 +84,21 @@ extension TicketSelectionViewController {
     
     func configureTextFields() {
         
-        if let myImage = UIImage(systemName: Constants.ImageNames.location.rawValue){
-            fromTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
-        fromTextField.layer.borderColor = UIColor.placeholderText.cgColor
-        if let myImage = UIImage(systemName: Constants.ImageNames.locationFill.rawValue){
-            toTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
+        fromTextField.addLeadingIcon(Constants.ImageNames.location.rawValue)
+        toTextField.addLeadingIcon(Constants.ImageNames.locationFill.rawValue)
+        dateTextField.addLeadingIcon(Constants.ImageNames.calendar.rawValue)
         toTextField.layer.borderColor = UIColor.placeholderText.cgColor
-        if let myImage = UIImage(systemName: Constants.ImageNames.calendar.rawValue){
-            dateTextField.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.white, colorBorder: UIColor.white)
-        }
         dateTextField.layer.borderColor = UIColor.placeholderText.cgColor
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.SegueIdentifiers.selectionToTicketsSegue.rawValue {
+            if let ticketsVC = segue.destination as? TicketsViewController {
+                guard let from = fromTextField.text, let to = toTextField.text, let date = dateTextField.text else { return }
+                let infoList = ["from": from, "to": to, "date": date]
+                ticketsVC.ticketInfo = infoList
+            }
+        }
     }
 }
 
