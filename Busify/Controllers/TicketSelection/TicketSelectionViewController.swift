@@ -87,8 +87,9 @@ extension TicketSelectionViewController {
         fromTextField.addLeadingIcon(Constants.ImageNames.location.rawValue)
         toTextField.addLeadingIcon(Constants.ImageNames.locationFill.rawValue)
         dateTextField.addLeadingIcon(Constants.ImageNames.calendar.rawValue)
-        toTextField.layer.borderColor = UIColor.placeholderText.cgColor
-        dateTextField.layer.borderColor = UIColor.placeholderText.cgColor
+        fromTextField.layer.borderColor = UIColor(named: Constants.ColorNames.primary.rawValue)?.cgColor
+        toTextField.layer.borderColor = UIColor(named: Constants.ColorNames.primary.rawValue)?.cgColor
+        dateTextField.layer.borderColor = UIColor(named: Constants.ColorNames.primary.rawValue)?.cgColor
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

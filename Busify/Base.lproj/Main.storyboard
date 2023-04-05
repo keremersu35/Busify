@@ -376,7 +376,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick Date" textAlignment="natural" minimumFontSize="17" background="cale" translatesAutoresizingMaskIntoConstraints="NO" id="xOQ-Qi-ZfP">
-                                <rect key="frame" x="16" y="370.66666666666669" width="361" height="50"/>
+                                <rect key="frame" x="16" y="369.33333333333331" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5pV-bO-Txr"/>
                                 </constraints>
@@ -393,13 +393,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fij-uN-6K4">
-                                <rect key="frame" x="32" y="342.66666666666669" width="345" height="20"/>
+                                <rect key="frame" x="32" y="341.33333333333331" width="345" height="20"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                                 <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVp-jg-AN3">
-                                <rect key="frame" x="16" y="428.66666666666669" width="176.66666666666666" height="34.333333333333314"/>
+                                <rect key="frame" x="16" y="427.33333333333331" width="176.66666666666666" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Today"/>
                                 <connections>
@@ -407,7 +407,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e48-wI-21R">
-                                <rect key="frame" x="200.66666666666663" y="428.66666666666669" width="176.33333333333337" height="34.333333333333314"/>
+                                <rect key="frame" x="200.66666666666663" y="427.33333333333331" width="176.33333333333337" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Tomorrow"/>
                                 <connections>
@@ -415,7 +415,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxv-Lm-Gzg">
-                                <rect key="frame" x="16" y="604" width="361" height="40"/>
+                                <rect key="frame" x="16" y="746" width="361" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zA7-XV-7K1"/>
                                 </constraints>
@@ -438,7 +438,7 @@
                                 </constraints>
                             </imageView>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLl-OL-qDL">
-                                <rect key="frame" x="176" y="289" width="40" height="35.666666666666686"/>
+                                <rect key="frame" x="176" y="289" width="40" height="34.333333333333314"/>
                                 <color key="backgroundColor" name="Background"/>
                                 <color key="tintColor" name="Primary"/>
                                 <state key="normal" title="Button"/>
@@ -459,7 +459,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dTZ-we-YWH" firstAttribute="top" secondItem="BNK-jR-q6Z" secondAttribute="top" id="1XZ-kq-8Rr"/>
-                            <constraint firstItem="BNK-jR-q6Z" firstAttribute="bottom" secondItem="Bxv-Lm-Gzg" secondAttribute="bottom" constant="174" id="2c9-b0-sNA"/>
+                            <constraint firstItem="BNK-jR-q6Z" firstAttribute="bottom" secondItem="Bxv-Lm-Gzg" secondAttribute="bottom" constant="32" id="2c9-b0-sNA"/>
                             <constraint firstItem="aVp-jg-AN3" firstAttribute="leading" secondItem="BNK-jR-q6Z" secondAttribute="leading" constant="16" id="2sd-8n-gSD"/>
                             <constraint firstItem="e48-wI-21R" firstAttribute="leading" secondItem="aVp-jg-AN3" secondAttribute="trailing" constant="8" id="3ZI-xE-Pjk"/>
                             <constraint firstItem="dTZ-we-YWH" firstAttribute="trailing" secondItem="BNK-jR-q6Z" secondAttribute="trailing" id="6fo-9K-dUt"/>
@@ -493,7 +493,6 @@
                             <constraint firstItem="xOQ-Qi-ZfP" firstAttribute="leading" secondItem="BNK-jR-q6Z" secondAttribute="leading" constant="16" id="mbK-Fv-8ZC"/>
                             <constraint firstItem="JtX-Rm-aVu" firstAttribute="width" secondItem="QZg-ee-8qg" secondAttribute="width" id="ogs-Fa-EaO"/>
                             <constraint firstItem="BNK-jR-q6Z" firstAttribute="trailing" secondItem="xOQ-Qi-ZfP" secondAttribute="trailing" constant="16" id="pEd-DH-Wgp"/>
-                            <constraint firstItem="Bxv-Lm-Gzg" firstAttribute="top" secondItem="aVp-jg-AN3" secondAttribute="bottom" constant="141" id="sfF-8x-iPs"/>
                             <constraint firstItem="e48-wI-21R" firstAttribute="height" secondItem="aVp-jg-AN3" secondAttribute="height" id="t50-zL-p7m"/>
                             <constraint firstItem="BNK-jR-q6Z" firstAttribute="trailing" secondItem="JtX-Rm-aVu" secondAttribute="trailing" constant="16" id="wZ0-CJ-ZU5"/>
                             <constraint firstItem="QZg-ee-8qg" firstAttribute="leading" secondItem="BNK-jR-q6Z" secondAttribute="leading" constant="16" id="wcP-fF-nhp"/>

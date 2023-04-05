@@ -16,12 +16,8 @@ class TicketCell: UITableViewCell {
     @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var departureTimeLabel: UILabel!
-    @IBOutlet weak var seatView: ALBusSeatView! {
-        didSet {
-            seatView.isHidden = true
-        }
-    }
-    var dataManager = SeatDataManager()
+    @IBOutlet weak var seatView: ALBusSeatView!
+    var seatDataManager = SeatDataManager()
     var first = [SeatStub]()
     var selectedSeatCount:Int = 0
     
@@ -30,13 +26,13 @@ class TicketCell: UITableViewCell {
         super.awakeFromNib()
     
         seatView?.config = BusSeatConfig()
-        seatView?.delegate = dataManager
-        seatView?.dataSource = dataManager
+        seatView?.delegate = seatDataManager
+        seatView?.dataSource = seatDataManager
         
         let mock = MockSeatCreater()
         
         first = mock.create(count: 45)
-        dataManager.seatList = [first]
+        seatDataManager.seatList = [first]
         seatView?.reload()
 
         contentView.layer.shadowColor = UIColor.black.cgColor
@@ -47,11 +43,15 @@ class TicketCell: UITableViewCell {
     }
     
     func setup(_ model: TicketCellModel) {
-        
         if (model.isHidden) {
-            self.seatView.heightAnchor.constraint(equalToConstant: 0).isActive = true
+            seatView.removeConstraints(seatView.constraints)
         } else {
-            self.seatView.heightAnchor.constraint(equalToConstant: 210).isActive = true
+            seatView.heightAnchor.constraint(equalToConstant: 210).isActive = true
+            NSLayoutConstraint.activate([
+             seatView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+             seatView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -48),
+             seatView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
+            ])
         }
         self.firmImageView.image = model.image
         self.dateLabel.text = String(describing: model.date)
@@ -64,6 +64,21 @@ class TicketCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 4, left: 8, bottom: 4, right: 8))
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
         
+        self.imageView?.image = nil
+        self.dateLabel?.text = nil
+        self.priceLabel?.text = nil
+        self.destinationLabel?.text = nil
+        self.departureTimeLabel?.text = nil
+        seatView.heightAnchor.constraint(equalToConstant: 210).isActive = true
+        NSLayoutConstraint.activate([
+         seatView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+         seatView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -48),
+         seatView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
+        ])
     }
 }

@@ -159,9 +159,9 @@
 		0CBFF54F29D8BD3300397103 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0CD8041529DE125B00FDCAE1 /* Constants */,
 				0C96831529DC51BE003758B0 /* BusConfigFiles */,
 				0CBFF55529D8C5BD00397103 /* Extensions */,
-				0CD8040929DC6EE500FDCAE1 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -232,6 +232,14 @@
 				0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CD8041529DE125B00FDCAE1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0CD8040929DC6EE500FDCAE1 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		0CFAB3CD29DB168100B87672 /* Tickets */ = {

@@ -15,7 +15,7 @@
 		58EA2A68D1285D8613E8129954F6F912 /* Pods-Busify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBF3585DD77150906358C5F599978FA /* Pods-Busify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		680C7301005C8FD707D2423AE74E494E /* ALSelectionTooltip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A632329798CDAF751843FC3499716A8 /* ALSelectionTooltip.swift */; };
 		6857DA17D80CB123FB2E0409AAC81DB2 /* ALBusSeatViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F821C9665EC383F4C9E6D18457F51C0 /* ALBusSeatViewHeaderView.swift */; };
-		71015330D9C72F54223A58649406FB44 /* ALBusSeatView-ALBusSeatView in Resources */ = {isa = PBXBuildFile; fileRef = 2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView-ALBusSeatView */; };
+		71015330D9C72F54223A58649406FB44 /* ALBusSeatView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView.bundle */; };
 		771AB822176908CE6B2E81EF2931C4DB /* ALBusSeatViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14BBB346F197D7F4C4515262B67100F /* ALBusSeatViewConfig.swift */; };
 		8C31E6E5CB201045BA38E94E066BB82C /* ALBusLeftHandDriveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219304B0A954C1D8437DF5D0A72DA59 /* ALBusLeftHandDriveLayout.swift */; };
 		8F6B171A476CFCB3934FFA0BE3146225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
@@ -52,7 +52,7 @@
 		240CDF5C435417B4AA61BC9718440767 /* ALBusSeatView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALBusSeatView.debug.xcconfig; sourceTree = "<group>"; };
 		25E340B01DE8C7CA9A1336E322299944 /* Pods-Busify-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Busify-Info.plist"; sourceTree = "<group>"; };
 		2A1AE51E2B253C485A6056B6DD03A9E2 /* ALBusSeatView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALBusSeatView-Info.plist"; sourceTree = "<group>"; };
-		2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView-ALBusSeatView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ALBusSeatView-ALBusSeatView"; path = ALBusSeatView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALBusSeatView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF3B1B6DCE9C093D4F3B7F34821945C /* Pods-Busify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Busify-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3219304B0A954C1D8437DF5D0A72DA59 /* ALBusLeftHandDriveLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALBusLeftHandDriveLayout.swift; path = ALBusSeatView/Classes/ALBusLeftHandDriveLayout.swift; sourceTree = "<group>"; };
 		3A48363D03056D5D1B8767BCEB60968B /* ALSeatCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALSeatCell.swift; path = ALBusSeatView/Classes/ALSeatCell.swift; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 		51C8ED903150064973FA7D66B057A69C /* Pods-Busify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Busify.debug.xcconfig"; sourceTree = "<group>"; };
 		57FC9B9D1A0CC53CCDDCEFCCC1159CC9 /* ALBusSeatView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALBusSeatView.modulemap; sourceTree = "<group>"; };
 		6A632329798CDAF751843FC3499716A8 /* ALSelectionTooltip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALSelectionTooltip.swift; path = ALBusSeatView/Classes/ALSelectionTooltip.swift; sourceTree = "<group>"; };
-		868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALBusSeatView; path = ALBusSeatView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALBusSeatView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A481F8CBD8165AC9FC6072EE9B9AAAF8 /* ALBusSeatView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALBusSeatView.release.xcconfig; sourceTree = "<group>"; };
 		B0B0808AA30AB8EDD36E95A49CD3E1A4 /* Pods-Busify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Busify-acknowledgements.plist"; sourceTree = "<group>"; };
 		BBC6BD50DA559D82D88B200CF3C8C591 /* ALBusSeat-Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ALBusSeat-Ext.swift"; path = "ALBusSeatView/Classes/ALBusSeat-Ext.swift"; sourceTree = "<group>"; };
@@ -168,8 +168,8 @@
 		986C2F9C6CEEF251BED1518A3CDCD7A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView */,
-				2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView-ALBusSeatView */,
+				868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView.framework */,
+				2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView.bundle */,
 				FE434735D35201D22EF9BE3D795219AD /* Pods-Busify */,
 			);
 			name = Products;
@@ -190,7 +190,6 @@
 				0F9E98D9CC6572F17622B06BD5ED576C /* Resources */,
 				78E67818C4A6B2213F39298A948AF35F /* Support Files */,
 			);
-			name = ALBusSeatView;
 			path = ALBusSeatView;
 			sourceTree = "<group>";
 		};
@@ -260,7 +259,7 @@
 			);
 			name = ALBusSeatView;
 			productName = ALBusSeatView;
-			productReference = 868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView */;
+			productReference = 868EBCD1583A9FFE5428E886347A489F /* ALBusSeatView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2C46BD2E460AE8795C60B51F206AF698 /* Pods-Busify */ = {
@@ -296,7 +295,7 @@
 			);
 			name = "ALBusSeatView-ALBusSeatView";
 			productName = ALBusSeatView;
-			productReference = 2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView-ALBusSeatView */;
+			productReference = 2B750AD8A444C2DF0B26F54E680B2757 /* ALBusSeatView.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -306,7 +305,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1420;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -348,7 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71015330D9C72F54223A58649406FB44 /* ALBusSeatView-ALBusSeatView in Resources */,
+				71015330D9C72F54223A58649406FB44 /* ALBusSeatView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +411,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ALBusSeatView";
 				IBSC_MODULE = ALBusSeatView;
 				INFOPLIST_FILE = "Target Support Files/ALBusSeatView/ResourceBundle-ALBusSeatView-ALBusSeatView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = ALBusSeatView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -456,6 +455,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -522,6 +522,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -565,7 +566,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ALBusSeatView/ALBusSeatView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ALBusSeatView/ALBusSeatView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +602,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ALBusSeatView/ALBusSeatView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ALBusSeatView/ALBusSeatView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,7 +628,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ALBusSeatView";
 				IBSC_MODULE = ALBusSeatView;
 				INFOPLIST_FILE = "Target Support Files/ALBusSeatView/ResourceBundle-ALBusSeatView-ALBusSeatView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = ALBusSeatView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
