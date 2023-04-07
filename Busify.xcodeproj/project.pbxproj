@@ -178,6 +178,7 @@
 		0CBFF55129D8BD5F00397103 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0CC630D929DFBF140053D25B /* Fonts */,
 				0CBFF54429D89E7800397103 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -232,6 +233,13 @@
 				0CBFF55A29D8CC5200397103 /* OnboardingCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CC630D929DFBF140053D25B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0CD8041529DE125B00FDCAE1 /* Constants */ = {
