@@ -65,6 +65,21 @@ extension TicketSelectionViewController {
         self.cityPicker.dataSource = self
         self.destinationCityPicker.delegate = self
         self.destinationCityPicker.dataSource = self
+        
+        // Add a "Done" button to the inputAccessoryView of each picker
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonClickedFromPicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        toolbar.setItems([spaceButton, doneButton], animated: false)
+        self.fromTextField.inputAccessoryView = toolbar
+        self.toTextField.inputAccessoryView = toolbar
+    }
+
+    // Handle the "Done" button action for pickers
+    @objc func doneButtonClickedFromPicker() {
+        self.fromTextField.resignFirstResponder()
+        self.toTextField.resignFirstResponder()
     }
     
     func createDatePicker() {
@@ -73,8 +88,9 @@ extension TicketSelectionViewController {
         
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: nil, action: #selector(doneButtonClicked))
-        toolbar.setItems([doneButton], animated: true)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonClicked))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolbar.setItems([spaceButton, doneButton], animated: true)
         dateTextField.inputAccessoryView = toolbar
         dateTextField.inputView = datePicker
         datePicker.datePickerMode = .date
@@ -121,10 +137,8 @@ extension TicketSelectionViewController: UIPickerViewDataSource, UIPickerViewDel
         switch pickerView.tag {
         case 1:
             fromTextField.text = cities[row]
-            fromTextField.resignFirstResponder()
         case 2:
             toTextField.text = cities[row]
-            toTextField.resignFirstResponder()
         default:
             print("Error")
         }

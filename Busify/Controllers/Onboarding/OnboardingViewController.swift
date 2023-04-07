@@ -18,6 +18,8 @@ class OnboardingViewController: UIViewController {
             pageControl.currentPage = currentPage
             if currentPage == onboardingArray.count - 1 {
                 nextButton.setTitle("Get Started", for: .normal)
+                nextButton.backgroundColor = UIColor(named: Constants.ColorNames.primary.rawValue)
+                nextButton.setTitleColor(UIColor.white, for: .normal)
             } else {
                 nextButton.setTitle("Next", for: .normal)
             }
@@ -27,6 +29,7 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.layer.borderColor = UIColor(named: Constants.ColorNames.primary.rawValue)?.cgColor
         configureCollectionView()
         pageControl.numberOfPages = onboardingArray.count
     }
@@ -76,8 +79,8 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     }
 }
 
-func setOnboardingData() -> Array<OnboardingModel> {
+func setOnboardingData() -> [OnboardingModel] {
     
-    return [OnboardingModel(image: UIImage(named: "onboarding1")!, title: "Welcome to Busify!", detail: "Skip the lines and hassle of buying tickets in person. Book your seats, pay online, and travel with ease using Busify."),
-            OnboardingModel(image: UIImage(named: "onboarding2")!, title: "Buy Bus Tickets in a Snap!", detail: "Skip the hassle of buying bus tickets in person. Use our app to purchase tickets with ease, anytime and anywhere.")]
+    [OnboardingModel(image: UIImage(named: "onboarding1")!, title: "Travel smarter with Busify!", detail: "Avoid the hassle of standing in long queues for bus tickets. Book with Busify and travel smarter, faster, and hassle-free."),
+    OnboardingModel(image: UIImage(named: "onboarding2")!, title: "Your one-stop ticket shop!", detail: "Detail: Purchase bus tickets with ease, anytime and anywhere. Skip the queues and travel with peace of mind using our app.")]
 }

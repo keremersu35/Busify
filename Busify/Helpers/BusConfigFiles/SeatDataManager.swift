@@ -1,10 +1,3 @@
-//
-//  SeatDataManager.swift
-//  Busify
-//
-//  Created by Kerem Ersu on 4.04.2023.
-//
-
 
 import Foundation
 import ALBusSeatView
@@ -21,19 +14,18 @@ extension SeatDataManager: ALBusSeatViewDelegate {
                   didSelectAtIndex indexPath: IndexPath,
                   seatType: ALBusSeatType, selectionType: ALSelectionType) {
         
-        var stub = seatList[indexPath.section][indexPath.item]
-        stub.gender = selectionType == .man ? true : false
-        selectedSeatlist.append(stub)
-        seatView.reload()
+        if let cell = seatView.superview?.superview as? TicketCell {
+            cell.seatSelected(at: indexPath, selectionType: selectionType)
+        }
     }
     
     func seatView(_ seatView: ALBusSeatView,
                   deSelectAtIndex indexPath: IndexPath,
                   seatType: ALBusSeatType) {
         
-        let stub = seatList[indexPath.section][indexPath.item]
-        selectedSeatlist.removeAll(where: { $0.id == stub.id })
-        seatView.reload()
+        if let cell = seatView.superview?.superview as? TicketCell {
+            cell.seatDeselected(at: indexPath)
+        }
     }
 }
 

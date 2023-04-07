@@ -47,12 +47,14 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.cellForRow(at: indexPath)?.setSelected(false, animated: false)  //for disable the click effect
+        
         ticketList[indexPath.row].isHidden.toggle()
-        if (previousIndex != -1) {
+        if (previousIndex == -1 || previousIndex == indexPath.row) {
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        } else {
             ticketList[previousIndex].isHidden = true
             tableView.reloadRows(at: [IndexPath(row: previousIndex, section: 0), indexPath], with: .automatic)
-        } else {
-            tableView.reloadRows(at: [indexPath], with: .automatic)
         }
         tableView.beginUpdates()
         tableView.endUpdates()
@@ -61,6 +63,6 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        ticketList[indexPath.row].isHidden ? 150.0 : 390.0
+        ticketList[indexPath.row].isHidden ? 150.0 : 430.0
     }
 }
