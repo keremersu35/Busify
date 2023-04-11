@@ -13,6 +13,7 @@ struct Constants {
         
         case ticketCell = "TicketCell"
         case onboardingCell = "OnboardingCell"
+        case passengerInfoCell = "PassengerInfoCell"
     }
     
     enum ImageNames: String {
@@ -33,6 +34,7 @@ struct Constants {
         case location = "location"
         case locationFill = "location.fill"
         case calendar = "calendar"
+        case phone = "phone"
     }
     
     enum ColorNames: String {
@@ -48,6 +50,7 @@ struct Constants {
         case RegisterVC = "RegisterVC"
         case TicketSelectionVC = "TicketSelectionVC"
         case TicketsVC = "TicketsVC"
+        case PaymentVC = "PaymentVC"
     }
     
     enum SegueIdentifiers: String {
@@ -55,6 +58,7 @@ struct Constants {
         case registerToTicketSelectionSegue = "registerToTicketSelectionSegue"
         case loginToTicketSelectionSegue = "loginToTicketSelectionSegue"
         case selectionToTicketsSegue = "selectionToTicketsSegue"
+        case ticketsToPaymentSegue = "ticketsToPaymentSegue"
     }
     
     enum UserDefaultsKeys: String {

@@ -20,10 +20,13 @@ class TicketCell: UITableViewCell {
     var seatDataManager = SeatDataManager()
     let mock = MockSeatCreater()
     var randomSeatList = [SeatStub]()
+    var selectedSeatList = [SeatStub]()
+    var ticketModel: TicketModel!
+    var buttonTappedClosure: (() -> Void)?
      
     @IBAction func bookNowButtonActiion(_ sender: UIButton) {
-        
-        
+        ticketModel = TicketModel(selectedSeats: selectedSeatList, price: priceLabel.text ?? "", date: dateLabel.text!, departureTime: departureTimeLabel.text ?? "", route: destinationLabel.text ?? "", firmImage: firmImageView.image!)
+        buttonTappedClosure?()
     }
     
     override func awakeFromNib() {
@@ -56,6 +59,7 @@ class TicketCell: UITableViewCell {
             seatDataManager.selectedSeatlist.append(stub)
         }
         setBookNowButtonEnable()
+        selectedSeatList = seatDataManager.selectedSeatlist
         busSeatView.reload()
     }
     
@@ -74,6 +78,7 @@ class TicketCell: UITableViewCell {
         let stub = seatDataManager.seatList[indexPath.section][indexPath.item]
         seatDataManager.selectedSeatlist.removeAll(where: { $0.id == stub.id })
         setBookNowButtonEnable()
+        selectedSeatList = seatDataManager.selectedSeatlist
         busSeatView.reload()
     }
     

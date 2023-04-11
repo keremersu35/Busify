@@ -45,9 +45,15 @@ extension TicketSelectionViewController {
     }
     
     @IBAction func findTicketButtonAction(_ sender: UIButton) {
-        performSegue(withIdentifier: Constants.SegueIdentifiers.selectionToTicketsSegue.rawValue, sender: self)
+        if fromTextField.text?.isEmpty == true || toTextField.text?.isEmpty == true || dateTextField.text?.isEmpty == true {
+            self.showAlert(title: "Error", message: "Please fill the blank areas")
+        } else if fromTextField.text == toTextField.text {
+            self.showAlert(title: "Error", message: "Departure and arrival points cannot be the same.")
+        }else {
+            performSegue(withIdentifier: Constants.SegueIdentifiers.selectionToTicketsSegue.rawValue, sender: self)
+        }
     }
-    
+
     @objc func doneButtonClicked() {
         dateTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)

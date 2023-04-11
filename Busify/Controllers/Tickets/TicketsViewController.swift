@@ -11,6 +11,7 @@ class TicketsViewController: UIViewController {
 
     @IBOutlet weak var ticketsTableView: UITableView!
     var ticketInfo = [String: String]()
+    @IBOutlet weak var backButton: UIBarButtonItem!
     var ticketList = [TicketCellModel]()
     var previousIndex = -1
     
@@ -30,6 +31,10 @@ extension TicketsViewController {
         ticketsTableView.dataSource = self
         ticketsTableView.register(UINib(nibName: Constants.NibNames.ticketCell.rawValue, bundle: nil), forCellReuseIdentifier: Constants.NibNames.ticketCell.rawValue)
     }
+    
+    @IBAction func backButtonAction(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
 }
 
 extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -41,6 +46,14 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.NibNames.ticketCell.rawValue, for: indexPath) as! TicketCell
+        
+        cell.buttonTappedClosure = { [weak self] in
+            guard let self = self else { return }
+            let destinationViewController = PaymentViewController()
+            let ticketModel = cell.ticketModel
+            self.performSegue(withIdentifier: Constants.SegueIdentifiers.ticketsToPaymentSegue.rawValue, sender: ticketModel)
+        }
+        
         cell.setup(ticketList[indexPath.row])
         return cell
     }
@@ -64,5 +77,14 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         ticketList[indexPath.row].isHidden ? 150.0 : 430.0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.SegueIdentifiers.ticketsToPaymentSegue.rawValue {
+            if let destinationViewController = segue.destination as? PaymentViewController,
+               let ticketModel = sender as? TicketModel {
+                destinationViewController.ticketModel = ticketModel
+            }
+        }
     }
 }
