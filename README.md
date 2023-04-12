@@ -8,7 +8,7 @@ Busify, kullanıcıların online olarak otobüs bileti satın almasına ve seyah
  
 ## Video
 
-https://github.com/keremersu35/Busify/blob/main/screenshots/video.mp4
+https://user-images.githubusercontent.com/56276464/231484558-ca7cff39-1a2d-4c2b-ade1-1e5b2d655c0a.mp4
 
 ## Kurulum
 
