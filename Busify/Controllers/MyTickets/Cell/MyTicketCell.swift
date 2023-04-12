@@ -14,10 +14,23 @@ class MyTicketCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var departureTimeLabel: UILabel!
+    @IBOutlet weak var seatNoLabel: UILabel!
+    @IBOutlet weak var nameLastNameLabel: UILabel!
 
-        // Configure the view for the selected state
+    func setup(_ model: TicketModel) {
+        dateLabel.text = model.date
+        departureTimeLabel.text = model.departureTime
+        let seatNumbers = model.selectedSeats.map { "\($0.number)" }.joined(separator: "-")
+        seatNoLabel.text = seatNumbers
+        nameLastNameLabel.text = model.nameLastName
+        priceLabel.text = model.price
+        totalPriceLabel.text = model.totalPrice
+        destinationLabel.text = model.route
     }
-    
 }
+

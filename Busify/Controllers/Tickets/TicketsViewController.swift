@@ -49,9 +49,8 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.buttonTappedClosure = { [weak self] in
             guard let self = self else { return }
-            let destinationViewController = PaymentViewController()
-            let ticketModel = cell.ticketModel
-            self.performSegue(withIdentifier: Constants.SegueIdentifiers.ticketsToPaymentSegue.rawValue, sender: ticketModel)
+            let passengerInfo = cell.passengerInfo
+            self.performSegue(withIdentifier: Constants.SegueIdentifiers.ticketsToPaymentSegue.rawValue, sender: passengerInfo)
         }
         
         cell.setup(ticketList[indexPath.row])
@@ -82,8 +81,8 @@ extension TicketsViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.SegueIdentifiers.ticketsToPaymentSegue.rawValue {
             if let destinationViewController = segue.destination as? PaymentViewController,
-               let ticketModel = sender as? TicketModel {
-                destinationViewController.ticketModel = ticketModel
+               let passengerInfo = sender as? PassengerInfoModel {
+                destinationViewController.passengerInfo = passengerInfo
             }
         }
     }

@@ -21,11 +21,11 @@ class TicketCell: UITableViewCell {
     let mock = MockSeatCreater()
     var randomSeatList = [SeatStub]()
     var selectedSeatList = [SeatStub]()
-    var ticketModel: TicketModel!
+    var passengerInfo: PassengerInfoModel!
     var buttonTappedClosure: (() -> Void)?
      
     @IBAction func bookNowButtonActiion(_ sender: UIButton) {
-        ticketModel = TicketModel(selectedSeats: selectedSeatList, price: priceLabel.text ?? "", date: dateLabel.text!, departureTime: departureTimeLabel.text ?? "", route: destinationLabel.text ?? "", firmImage: firmImageView.image!)
+        passengerInfo = PassengerInfoModel(firmImage: firmImageView.image!, departureTime: departureTimeLabel.text ?? "", price: priceLabel.text!, date: dateLabel.text ?? "", route: destinationLabel.text ?? "", selectedSeats: selectedSeatList)
         buttonTappedClosure?()
     }
     

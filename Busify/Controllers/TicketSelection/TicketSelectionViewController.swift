@@ -72,7 +72,6 @@ extension TicketSelectionViewController {
         self.destinationCityPicker.delegate = self
         self.destinationCityPicker.dataSource = self
         
-        // Add a "Done" button to the inputAccessoryView of each picker
         let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonClickedFromPicker))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let toolbar = UIToolbar()
@@ -82,11 +81,14 @@ extension TicketSelectionViewController {
         self.toTextField.inputAccessoryView = toolbar
     }
 
-    // Handle the "Done" button action for pickers
     @objc func doneButtonClickedFromPicker() {
         self.fromTextField.resignFirstResponder()
         self.toTextField.resignFirstResponder()
+        
+        let selectedRowFrom = cityPicker.selectedRow(inComponent: 0)
+        fromTextField.text = cities[selectedRowFrom]
     }
+
     
     func createDatePicker() {
         formatter.dateStyle = .medium

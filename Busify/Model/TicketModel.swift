@@ -8,12 +8,28 @@
 import Foundation
 import UIKit
 
-struct TicketModel {
+struct TicketModel: Codable {
     
     let selectedSeats: [SeatStub]
+    let phoneNumber: String
+    let mail: String
     let price: String
+    let totalPrice: String
     let date: String
     let departureTime: String
     let route: String
-    let firmImage: UIImage
+    let nameLastName: String
+    let identityNumber: String
+}
+
+extension TicketModel {
+    func toData() -> Data? {
+        do {
+            let encoder = JSONEncoder()
+            return try encoder.encode(self)
+        } catch {
+            print("Error: \(error.localizedDescription)")
+            return nil
+        }
+    }
 }

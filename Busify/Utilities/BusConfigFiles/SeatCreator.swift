@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SeatStub {
+struct SeatStub: Codable {
     let id: String
     let number: Int
     let salable: Bool
