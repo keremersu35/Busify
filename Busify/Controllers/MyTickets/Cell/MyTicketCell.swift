@@ -32,5 +32,15 @@ class MyTicketCell: UITableViewCell {
         totalPriceLabel.text = model.totalPrice
         destinationLabel.text = model.route
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 4, left: 8, bottom: 4, right: 8))
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 3)
+        contentView.layer.shadowRadius = 2
+        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.masksToBounds = false
+    }
 }
 

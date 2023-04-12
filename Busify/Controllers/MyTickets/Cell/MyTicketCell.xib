@@ -87,6 +87,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="wso-ot-apu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0Tm-gn-pD0"/>
                     <constraint firstItem="ox3-GG-uAy" firstAttribute="top" secondItem="pdr-Ik-cXh" secondAttribute="bottom" constant="8" id="4h2-tB-2KV"/>
@@ -112,8 +113,14 @@
                     <constraint firstItem="MvP-gL-srR" firstAttribute="leading" secondItem="wso-ot-apu" secondAttribute="trailing" constant="16" id="ybi-ST-g90"/>
                     <constraint firstItem="MvP-gL-srR" firstAttribute="top" secondItem="ox3-GG-uAy" secondAttribute="bottom" constant="8" id="zrl-wf-uaP"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="8"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="dateLabel" destination="USU-c2-g5x" id="rNq-CY-Q6q"/>
                 <outlet property="departureTimeLabel" destination="pdr-Ik-cXh" id="ERu-Xr-v3B"/>
