@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EbH-o5-MZE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QU2-az-7YI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -913,6 +913,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Pay and Book"/>
                                                 <connections>
                                                     <action selector="payAndBookButtonAction:" destination="ux6-2V-8BD" eventType="touchUpInside" id="a7n-ir-pas"/>
+                                                    <segue destination="xiW-SC-aaC" kind="presentation" modalPresentationStyle="fullScreen" id="g6a-5J-cpE"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="390 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlD-1A-7yb">
@@ -1241,6 +1242,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="g6a-5J-cpE"/>
         <segue reference="zQg-8X-hg7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="Primary"/>

@@ -105,16 +105,6 @@ extension PaymentViewController {
             if let ticketData = ticketModel.toData() {
                 ticketDataArray.append(ticketData)
                 UserDefaults.standard.set(ticketDataArray, forKey: Constants.UserDefaultsKeys.ticketData.rawValue)
-                
-                let alertController = UIAlertController(title: "Booking Successful", message: "Press OK to see your tickets.", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                    let destinationVC = self.storyboard?.instantiateViewController(withIdentifier: Constants.VCIdentifiers.MyTicketsVC.rawValue) as! MyTicketsViewController
-                    destinationVC.modalPresentationStyle = .fullScreen
-                    self.present(destinationVC, animated: true, completion: nil)
-                }
-                alertController.addAction(okAction)
-                self.present(alertController, animated: true, completion: nil)
-                
             } else {
                 print("Failed to convert ticket model to data")
             }
